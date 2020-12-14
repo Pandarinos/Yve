@@ -291,7 +291,9 @@ def print_help(update, context):
         "geschrieben wurden.\n"
         "/networkstats - Zeigt dir eine Gesamtstatistik aller Gruppen, "
         "in denen Yve verwendet wird.\n\n"
-        "Yve Version 0.0.1 - erschaffen von @thisdudeisvegan & @cri5h"
+        "Yve Version 0.0.2 - erschaffen von @thisdudeisvegan & @cri5h\n\n"
+        "Meinen Code findest du auf GitHub! Bitte respektiere meine Lizenz.\n"
+        "https://github.com/Pandarinos/Yve"
     )
     context.bot.send_message(
         chat_id=update.effective_chat.id, text=help_msg, parse_mode=ParseMode.MARKDOWN
