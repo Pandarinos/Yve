@@ -1,0 +1,61 @@
+# The username of your bot as set with the botfather
+BOT_USERNAME: "@"
+
+BOT_VERSION:
+  - "0.0.1"
+  - ""
+
+# The bot token supplied by botfather
+BOT_TOKEN: ""
+
+# The telegram ID of the bot owner
+BOT_OWNER_ID:
+
+# Admin IDs
+ADMINS:
+  - # me
+  -
+  -
+
+# Group IDs
+GROUPS:
+ -
+ -
+ -
+
+# Message types to log
+MESSAGE_TYPES:
+  - 'audio'
+  - 'game'
+  - 'document'
+  - 'photo'
+  - 'sticker'
+  - 'video'
+  - 'voice'
+  - 'video_note'
+  - 'contact'
+  - 'location'
+  - 'venue'
+  - 'invoice'
+  - 'successful_payment'
+  - 'text'
+  - 'new_chat_members'
+  - 'new_chat_title'
+  - 'new_chat_photo'
+  - 'delete_chat_photo'
+  - 'group_chat_created'
+  - 'supergroup_chat_created'
+  - 'channel_chat_created'
+  - 'migrate_to_chat_id'
+  - 'migrate_from_chat_id'
+  - 'pinned_message'
+
+# Path to Sqlite3 Database
+SQLITE3_DB: "./db/panda.sqlite3"
+
+# Public IP or FQDN
+PUB_IP: "111.111.111.111"
+
+# Path to cert and private key
+CERT: "./cert.pem"
+PRIV_KEY: "./private.key"
