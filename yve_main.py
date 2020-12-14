@@ -104,7 +104,7 @@ def user_statistic(update, context):
                 f"({user_msg/total_msg*100:.1f}%)"
             )
         else:
-            text = f"@{user_name}:\nKeine Nachrichten. Gruppe nicht in Datenbank?"
+            text = f"@{user_name}:\nKeine Nachrichten. Vielleicht ist die Gruppe nicht in der Datenbank?"
     else:
         text = f"{user_msg} Nachrichten in allen Gruppen."
 
@@ -164,7 +164,7 @@ def fetch_group_id(update, context, msg_id):
                       or from the CallbackQuery object
         chat_data (dict): A dictionary to store chat related stuff
         nws (list}: Stores the message IDs of the messages that where
-                    called with the /networkstat command
+                    called with the /networkstats command
 
     Returns:
         Either the current Telegram group ID or None
@@ -187,7 +187,7 @@ def total_statistics(update, context):
 
     Args:
         group_id (int|None): Telegram Group ID or None if called via
-                             the /networkstat command
+                             the /networkstats command
 
     """
     group_id = fetch_group_id(update, context, update.message.message_id)
