@@ -17,7 +17,7 @@ if my_file.is_file():
     with open(config_file) as fp:
         config = yaml.safe_load(fp)
 else:
-    print("config.yaml file does not exists. Please make from config.sample.yaml file")
+    print("config.yaml file does not exists. Please make one  from config.sample.yaml file")
     sys.exit()
 
 
