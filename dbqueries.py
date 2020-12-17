@@ -2,7 +2,7 @@
 
 
 from sqlite3 import Error as DB_Error
-from telegram.utils.helper import escape_markdown
+from telegram.utils.helpers import escape_markdown
 from dbhelper import DBHelper
 
 

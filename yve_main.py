@@ -10,7 +10,7 @@ import sys
 
 # import pprint
 from telegram import ParseMode, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram utils.helper import escape_markdown
+from telegram.utils.helpers import escape_markdown
 from telegram.ext import (
     Updater,
     Filters,
