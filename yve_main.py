@@ -2,7 +2,7 @@
 
 
 """
-    pandastat_bot version 0.0.1
+    Yve version 0.0.2
 
 """
 
