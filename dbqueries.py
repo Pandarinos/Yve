@@ -162,6 +162,6 @@ def db_get_top_posters(group_id=None, timespan=0):
 
     text = "\n*Highscore*:\n\n"
     for posts, user in top_posters:
-        text += f"@{user} {posts} Nachrichten\n"
+        text += f"{user} {posts} Nachrichten\n"
 
     return text
