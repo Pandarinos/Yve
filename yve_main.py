@@ -2,7 +2,7 @@
 
 
 """
-    pandastat_bot version 0.0.1
+    Yve version 0.0.2
 
 """
 
@@ -100,11 +100,11 @@ def user_statistic(update, context):
     if group_id:
         if total_msg > 0:
             text = (
-                f"@{user_name}:\n{user_msg}/{total_msg} Nachrichten "
+                f"{user_name}:\n{user_msg}/{total_msg} Nachrichten "
                 f"({user_msg/total_msg*100:.1f}%)"
             )
         else:
-            text = f"@{user_name}:\nKeine Nachrichten. Vielleicht ist die Gruppe nicht in der Datenbank?"
+            text = f"{user_name}:\nKeine Nachrichten. Vielleicht ist die Gruppe nicht in der Datenbank?"
     else:
         text = f"{user_msg} Nachrichten in allen Gruppen."
 
@@ -291,7 +291,10 @@ def print_help(update, context):
         "geschrieben wurden.\n"
         "/networkstats - Zeigt dir eine Gesamtstatistik aller Gruppen, "
         "in denen Yve verwendet wird.\n\n"
-        "Yve Version 0.0.1 - erschaffen von @thisdudeisvegan & @cri5h"
+        "Yve Version 0.0.2 - erschaffen von @thisdudeisvegan & @cri5h\n"
+        "News-Channel: @yvenews\n"
+        "Meinen Code findest du auf GitHub! Bitte respektiere meine Lizenz.\n"
+        "https://github.com/Pandarinos/Yve"
     )
     context.bot.send_message(
         chat_id=update.effective_chat.id, text=help_msg, parse_mode=ParseMode.MARKDOWN
