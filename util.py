@@ -7,6 +7,7 @@ from logging import handlers
 import hashlib
 from functools import wraps
 
+from telegram.utils.helpers import effective_message_type
 from config import ADMINS, GROUPS, MESSAGE_TYPES
 from dbqueries import db_add_group, db_add_user
 
