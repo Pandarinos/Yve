@@ -291,7 +291,8 @@ def print_help(update, context):
         "geschrieben wurden.\n"
         "/networkstats - Zeigt dir eine Gesamtstatistik aller Gruppen, "
         "in denen Yve verwendet wird.\n\n"
-        "Yve Version 0.0.2 - erschaffen von @thisdudeisvegan & @cri5h\n\n"
+        "Yve Version 0.0.2 - erschaffen von @thisdudeisvegan & @cri5h\n"
+        "News-Channel: @yve_news\n"
         "Meinen Code findest du auf GitHub! Bitte respektiere meine Lizenz.\n"
         "https://github.com/Pandarinos/Yve"
     )
