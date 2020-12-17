@@ -10,6 +10,7 @@ import sys
 
 # import pprint
 from telegram import ParseMode, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram utils.helper import escape_markdown
 from telegram.ext import (
     Updater,
     Filters,
@@ -69,7 +70,7 @@ def process_message(update, context):
             "DEBUG: ON\n\n"
             f"Group ID: {group_id}\n"
             f"Type:{msg_type}\n"
-            f"Name:{user_name}\n"
+            f"Name:{escape_markdown(user_name)}\n"
             f"ID:{user_id}\n"
             f"Length:{msg_length}\n"
             f"Date:{timestamp}\n"
