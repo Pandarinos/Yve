@@ -105,7 +105,7 @@ def user_statistic(update, context):
                 f"({user_msg/total_msg*100:.1f}%)"
             )
         else:
-            text = f"{user_name}:\nKeine Nachrichten. Vielleicht ist die Gruppe nicht in der Datenbank?"
+            text = f"{user_name}:\nKeine Nachrichten. Die Gruppe ist nicht in der Datenbank."
     else:
         text = f"{user_msg} Nachrichten in allen Gruppen."
 
