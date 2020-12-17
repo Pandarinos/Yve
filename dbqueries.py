@@ -2,6 +2,7 @@
 
 
 from sqlite3 import Error as DB_Error
+from telegram.utils.helpers import escape_markdown
 from dbhelper import DBHelper
 
 
@@ -162,6 +163,7 @@ def db_get_top_posters(group_id=None, timespan=0):
 
     text = "\n*Highscore*:\n\n"
     for posts, user in top_posters:
+        user = escape_markdown(user)
         text += f"{user} {posts} Nachrichten\n"
 
     return text
